@@ -25,7 +25,7 @@ export default function Home(){
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
-      },
+      },// Function to process the text from the response
       body: JSON.stringify([...messages, { role: 'user', content: message }]),
     }).then(async (res) => {
       const reader = res.body.getReader()  
@@ -40,7 +40,7 @@ export default function Home(){
       const text = decoder.decode(value || new Uint8Array(), { stream: true })  
       setMessages((messages) => {
         let lastMessage = messages[messages.length - 1]  
-        let otherMessages = messages.slice(0, messages.length - 1)  /
+        let otherMessages = messages.slice(0, messages.length - 1)  
         return [
           ...otherMessages,
           { ...lastMessage, content: lastMessage.content + text },  
@@ -113,4 +113,4 @@ export default function Home(){
     </Stack>    
   </Box>
   )
-} 
+} // Function to process the text from the response
