@@ -19,5 +19,14 @@ export default function Home(){
     flexDirection="column" 
     justifyContent="center" 
     alignItems="center"
-  ></Box>)
+  >
+  <Stack
+        direction={'column'}
+        width="500px"
+        height="700px"
+        border="1px solid black"
+        p={2}
+        spacing={3}
+      ></Stack>    
+  </Box>)
 } 
