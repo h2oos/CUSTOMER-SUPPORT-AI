@@ -1,13 +1,15 @@
 'use client'
 import Image from 'next/image'
 import { useState} from 'react'
-import { Box, Stack } from '@mui/material'
+import { Box, Button, Stack } from '@mui/material'
 
 export default function Home(){
-  const [messages, setMessages] = useState({
+  const [messages, setMessages] = useState([
+    {
     role: 'assistant',
     content: `Hi! I'm a basketball chatbot. Ask me questions you have about teams, players, games, stats, and other NBA-related topics` , 
-  })
+    }
+])
 
   const [message, setMessage] = useState('')
   
@@ -58,6 +60,18 @@ export default function Home(){
             </Box>
           ))}
       </Stack>
+      <Stack direction={'row'} spacing={2}>
+          <TextField
+            label="Message"
+            fullWidth
+            value={message}
+            onChange={(e) => setMessage(e.target.value)}
+          />
+          <Button variant="contained" onClick={sendMessage}>
+            Send
+          </Button>
+        </Stack>
     </Stack>    
-  </Box>)
+  </Box>
+  )
 } 
