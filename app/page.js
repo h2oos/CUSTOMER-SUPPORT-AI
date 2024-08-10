@@ -15,6 +15,11 @@ export default function Home(){
   
   const sendMessage = async () => {
     setMessage('')
+    setMessages((messages) => [
+      ...messages,
+      { role: 'user', content: message },
+
+    ])
 
   }
 
