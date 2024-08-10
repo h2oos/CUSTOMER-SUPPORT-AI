@@ -27,7 +27,9 @@ export default function Home(){
         'Content-Type': 'application/json',
       },
       body: JSON.stringify([...messages, { role: 'user', content: message }]),
-    })
+    }).then(async (res) => {
+      const reader = res.body.getReader()  
+      const decoder = new TextDecoder()  
 
   }
 
