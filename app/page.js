@@ -21,6 +21,15 @@ export default function Home(){
       { role: 'assistant', content: ''},
     ])
 
+    const response = fetch('/api/chat', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+    }
+
+    )
+
   }
 
   
