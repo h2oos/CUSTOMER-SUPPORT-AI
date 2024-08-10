@@ -13,6 +13,11 @@ export default function Home(){
 
   const [message, setMessage] = useState('')
   
+  const sendMessage = async () => {
+
+  }
+
+  
   return(
   <Box 
     width="100vh" 
@@ -67,7 +72,7 @@ export default function Home(){
             value={message}
             onChange={(e) => setMessage(e.target.value)}
           />
-          <Button variant="contained" >
+          <Button variant="contained" onClick={sendMessage}>
             Send
           </Button>
         </Stack>
