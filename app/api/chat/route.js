@@ -19,3 +19,8 @@ Limitations: Acknowledge when you do not have the most current information or wh
 
 Adaptability: Be flexible in your responses to cater to both casual fans and die-hard NBA enthusiasts. Adjust your level of detail based on the user’s questions and interests.`
 
+export async function POST(req) {
+    const openai = new OpenAI()
+    const data = await req.json()
+    
+}
