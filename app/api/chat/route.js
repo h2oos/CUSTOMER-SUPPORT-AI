@@ -31,7 +31,7 @@ export async function POST(req) {
          },
          ...data,
         ],
-        model: 'gpt−4o',
+        model: 'gpt-4.0-mini',
         stream: true,    
     })
     
