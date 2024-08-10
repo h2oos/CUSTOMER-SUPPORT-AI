@@ -20,13 +20,22 @@ export default function Home(){
     justifyContent="center" 
     alignItems="center"
   >
-  <Stack
+    <Stack
         direction={'column'}
         width="500px"
         height="700px"
         border="1px solid black"
         p={2}
         spacing={3}
-      ></Stack>    
+    >
+      <Stack
+          direction={'column'}
+          spacing={2}
+          flexGrow={1}
+          overflow="auto"
+          maxHeight="100%">
+
+      </Stack>
+    </Stack>    
   </Box>)
 } 
