@@ -11,5 +11,13 @@ export default function Home(){
 
   const [message, setMessage] = useState('')
   
-  return(<Box></Box>)
+  return(
+  <Box 
+    width="100vh" 
+    height="100vh" 
+    display="flex" 
+    flexDirection="column" 
+    justifyContent="center" 
+    alignItems="center"
+  ></Box>)
 } 
