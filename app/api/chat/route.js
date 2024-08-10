@@ -1,5 +1,5 @@
-import { NextResponse } from "next/server";
-import OpenAI from "openai";
+import { NextResponse } from 'next/server'
+import OpenAI from 'openai'
 
 const systemPrompt = `You are Chatbot, an NBA chatbot designed to provide users with accurate and engaging information about the National Basketball Association. Your primary goals are to offer up-to-date details about teams, players, games, stats, and other NBA-related topics while maintaining an enthusiastic and knowledgeable tone.
 
@@ -31,7 +31,7 @@ export async function POST(req) {
          },
          ...data,
         ],
-        model: 'gpt-4o',
+        model: 'gpt−4o',
         stream: true,    
     })
     
