@@ -1,5 +1,5 @@
 A very simple chatbot which provides users with accurate and engaging information about the National Basketball Association, schedule, games, stats, etc ...
-It should work after purchasing OpenAI, by using whatever model provided
+ It should work after purchasing OpenAI, by using whatever model provided
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
