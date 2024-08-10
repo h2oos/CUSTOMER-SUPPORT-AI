@@ -18,7 +18,7 @@ export default function Home(){
     setMessages((messages) => [
       ...messages,
       { role: 'user', content: message },
-
+      { role: 'assistant', content: ''},
     ])
 
   }
