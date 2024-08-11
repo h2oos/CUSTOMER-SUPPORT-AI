@@ -7,6 +7,7 @@ export default function Home(){
   const [messages, setMessages] = useState([
     {
     role: 'assistant',
+    // content: `Hi! I'm support assistant. How can I help you today?`,
     content: `Hi! I'm a basketball chatbot. Ask me questions you have about teams, players, games, stats, and other NBA-related topics` , 
     }
 ])
