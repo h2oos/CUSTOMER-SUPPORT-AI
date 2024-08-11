@@ -55,4 +55,24 @@ export async function POST(req) {
         },
     })
     return new NextResponse(stream)
+    // code to input openrouter
+    // export async function POST(req, any) {
+    // const data = await req.json();
+    // const response = await fetch(
+    //     'https://openrouter.ai/api/v1/chat/completions',
+    //     {
+    //         method:'POST',
+    //         headers:{
+    //             Authorization: `${process.env.API_KEY}`,
+    //             'Content-Type': 'application/json',
+    //         },
+    //         body: JSON.stringify({
+    //             model:'meta-llama/llama-3.1-8b-instruct:free',
+    //             Messages: [{role: 'system', content: systemPrompt}, ...data],
+    //         }),
+    //     }
+    // );
+    // const result = await response.json();
+    // const content = result.choices[0]?.message.content || 'No content received';
+    // return new NextResponse(content);
 }
