@@ -1,6 +1,6 @@
 A very simple chatbot which provides users with accurate and engaging information about the National Basketball Association, schedule, games, stats, etc ...
  It should work after purchasing OpenAI, by using whatever model provided. 
- #updated using openrouter, model llama
+ #updated using openrouter, model llama, should be working
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
