@@ -34,7 +34,7 @@ export async function POST(req) {
          },
          ...data,
         ],
-        model: 'GPT-4o',
+        model: 'meta-llama/llama-3-8b-instruct:free',
         stream: true,    
     })
     
