@@ -20,7 +20,10 @@ Limitations: Acknowledge when you do not have the most current information or wh
 Adaptability: Be flexible in your responses to cater to both casual fans and die-hard NBA enthusiasts. Adjust your level of detail based on the user’s questions and interests.`
 
 export async function POST(req) {
-    const openai = new OpenAI()
+    const openai = new OpenAI({
+        baseURL: "https://openrouter.ai/api/v1",
+        apiKey: process.env.OPENROUTER_API_KEY
+    });
     const data = await req.json()
 
     const completion = await openai.chat.completions.create({
