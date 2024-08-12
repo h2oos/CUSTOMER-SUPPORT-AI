@@ -23,6 +23,9 @@ export async function POST(req) {
     const openai = new OpenAI({
         baseURL: "https://openrouter.ai/api/v1",
         apiKey: process.env.OPENROUTER_API_KEY
+        defaultHeaders: {
+        "HTTP-Referer": https://sport-5y7ss61rh-h2oos-projects.vercel.app/, // Optional, for including your app on openrouter.ai rankings.
+  }
     });
     const data = await req.json()
 
